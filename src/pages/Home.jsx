@@ -42,7 +42,7 @@ export const Home = () => {
               <Post
                 id={object._id}
                 title={object.title}
-                imageUrl={object.imageUrl ? `http://localhost:4444${object.imageUrl}` : ''}
+                imageUrl={object.imageUrl ? `process.env.REACT_APP_API_URL${object.imageUrl}` : ''}
                 user={object.user}
                 createdAt={"12 июня 2022 г."}
                 viewsCount={object.viewsCount}
